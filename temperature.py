@@ -22,4 +22,4 @@ while True:
         sensor.exit()
         raise error
 
-    time.sleep(3.0
+    time.sleep(3.0)
