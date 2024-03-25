@@ -8,6 +8,10 @@ GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)      # Use Board pin numbering
 GPIO.setup(red_led_pin, GPIO.OUT)
 
-GPIO.output(red_led_pin, True)
-sleep(10)
-GPIO.output(red_led_pin, False)
+
+def led_on():
+    GPIO.output(red_led_pin, True)
+
+
+def led_off():
+    GPIO.output(red_led_pin, False)
